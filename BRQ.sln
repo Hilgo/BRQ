@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRQ", "BRQ.csproj", "{D755CF9B-D2F2-4EDF-9FEC-265E353EE218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRQTests", "..\BRQTests\BRQTests.csproj", "{C5CC3A14-4D54-435E-B6DC-0AFB4615CE4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D755CF9B-D2F2-4EDF-9FEC-265E353EE218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D755CF9B-D2F2-4EDF-9FEC-265E353EE218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D755CF9B-D2F2-4EDF-9FEC-265E353EE218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D755CF9B-D2F2-4EDF-9FEC-265E353EE218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CC3A14-4D54-435E-B6DC-0AFB4615CE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CC3A14-4D54-435E-B6DC-0AFB4615CE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CC3A14-4D54-435E-B6DC-0AFB4615CE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CC3A14-4D54-435E-B6DC-0AFB4615CE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF8E2735-3D2B-4EDF-9859-B73A23F71984}
+	EndGlobalSection
+EndGlobal
