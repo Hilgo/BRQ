@@ -19,7 +19,7 @@ namespace BRQ.Rules
         // Add a new rule dynamically
         public void AddRule(ITradeCategoryRule rule) => _rules.Add(rule);
 
-        public List<string> CategorizeTrades(List<Trade> portfolio)
+        public List<string> CategorizeTrades(List<ITrade> portfolio)
         {
             var tradeCategories = new List<string>();
 

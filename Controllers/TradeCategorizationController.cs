@@ -1,3 +1,4 @@
+using BRQ.DTOs;
 using BRQ.Enums;
 using BRQ.Interfaces;
 using BRQ.Models;
@@ -20,15 +21,17 @@ namespace BRQ.Controllers
         }
 
         [HttpPost("categorize")] // Example POST endpoint
-        public IActionResult CategorizeTrades([FromBody] List<Trade> trades)
+        public IActionResult CategorizeTrades([FromBody] List<TradeDto> tradeDtos)
         {
+            var trades = tradeDtos.Select(dto => new Trade(dto.Value, dto.ClientSector)).ToList();
+
             if (trades == null || trades.Count == 0)
             {
                 return BadRequest("Please provide a valid list of trades.");
             }
 
             // Use the classifier to get the categories
-            List<string> categories = _classifier.CategorizeTrades(trades);
+            List<string> categories = _classifier.CategorizeTrades(trades.Cast<ITrade>().ToList());
 
             // Return the results (you could use different return types)
             return Ok(categories);
